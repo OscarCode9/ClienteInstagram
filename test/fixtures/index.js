@@ -9,7 +9,7 @@ const fix = {
       url: `http://s3.ovents.text/${uuid.v4()}.jpg`,
       likes: 0,
       liked: false,
-      publicId: uuid.decode(id),
+      publicId: uuid.encode(id),
       id: id,
       createdAt: new Date().toString()
     }
